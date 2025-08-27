@@ -15,13 +15,11 @@
       <span class="mx-1">&middot;</span>
       <span>{{- $single_author -}}</span>
       {{- end -}}
+      {{- if .Params.address -}}
+      <span class="mx-1">&middot;</span>
+      <span>📍 {{ .Params.address }}</span>
+      {{- end -}}
     </div>
-    {{- end -}}
-
-    {{- if .Params.address -}}
-      <div class="text-xs antialiased opacity-60 mt-1">
-        📍 {{ .Params.address }}
-      </div>
     {{- end -}}
   </header>
 
